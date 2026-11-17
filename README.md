@@ -14,7 +14,7 @@ The final dataset is built with SQL in **BigQuery**. The dashboard is built in *
 - Which countries have the most accounts and the most sent emails?
 - How do users differ by send interval, account verification, and subscription status?
 
-<img width="1436" height="1079" alt="image" src="https://github.com/user-attachments/assets/0901e210-e777-4538-9aaa-4201d1f212b3" />
+<img width="1436" height="1078" alt="image" src="https://github.com/user-attachments/assets/a0623b4e-6c31-4dd3-9464-75965cc7245b" />
 
 ## Tech Stack
  
@@ -70,10 +70,12 @@ The query uses CTEs, so each step is easy to read:
 
 ## Key Findings
  
-- The **United States**, **India**, and **Canada** are the top three countries by number of accounts.
-- The United States also has by far the largest number of sent emails.
-- Activity grows from November 2020, reaches a peak around December 2020, and then goes down until February 2021.
-- Some countries with fewer accounts (for example, Italy and Singapore) are still high in the sent-emails ranking, so the two rankings are not the same.
+- The **United States**, **India**, and **Canada** are the top three countries by both accounts (12,384 / 2,687 / 2,067) and sent emails (233,503 / 51,189 / 37,914).
+- The United States sends about 4.5 times more emails than India, the second market.
+- **China** has the highest open rate (41.2%), while the **United Kingdom** has the highest click rate among opened emails (13.8%).
+- Open rates in the top markets are similar (about 31-41%), but click-to-sent rates are low everywhere (about 3-5%), so the biggest drop in the funnel happens between opening an email and clicking a link.
+- The two rankings do not always match: for example, Italy is 9th by accounts but 11th by sent emails, and China is 8th by accounts but 5th by sent emails.
+- Email activity grows from November 2020, peaks at about 5.4K emails per day in early December 2020, and then declines until February 2021.
 
 ## Note About the Data
  
